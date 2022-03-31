@@ -1,0 +1,64 @@
+0 - Install modules
+	init -y
+	install mongoose
+	install express
+	install ejs
+	
+1 - Create app.js
+-Route/Express
+	Import Express
+	call express method
+-start server
+-set app view engine as ejs
+-get app route address to home
+	render home
+-create home page
+
+2 - Create Model and connect to mongodb
+-create model
+	import mongo
+	create schema
+	create model atributes
+	export model
+-mongodb
+	import mongo
+	create mongo connection
+	set mongo error
+
+3 - Create index
+	-index route	
+		index address
+		render index/index.js
+	-index page
+
+4 - Create show
+	-campground id route
+		address based on id
+		render campground/show
+	-show page
+
+5 - Create new
+	-campground new route
+		render campgrounds/new
+	-campground post model creation
+		create new Campground
+		save 	
+		redirect to campground/id
+	-create new page
+		create form with post method
+		create input for title and location
+		create button do submit
+
+6 - Create edit and update functionality 
+	-create a edit route
+		get id
+	-create edit ejs page
+		add form
+		add standard value to title and location
+	-add edit button to show page
+	-install override method to simulate path delete
+	-import override method to app.js
+	-create app.put to fake a put request
+		findbyidandupdate by id and edit 
+		redirect to show id
+	-edit form action to method=PUT
