@@ -62,3 +62,4 @@
 		findbyidandupdate by id and edit 
 		redirect to show id
 	-edit form action to method=PUT
+7 - 
