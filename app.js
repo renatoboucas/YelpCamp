@@ -23,6 +23,7 @@ const MongoDBStore = require("connect-mongo")(session);
 
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp'; 
 console.log(process.env.DB_URL);
+console.log(process.env.CLOUDINARY_SECRET);
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useCreateIndex: true,
