@@ -21,7 +21,7 @@ const reviewRoutes = require('./routes/reviews');
 
 const MongoDBStore = require("connect-mongo")(session);
 
-const dbUrl = process.env.DB_URL;
+const dbUrl = "mongodb://our-first-user:W0k0pOixg2fT1Zre@cluster0-shard-00-00.hk6ff.mongodb.net:27017,cluster0-shard-00-01.hk6ff.mongodb.net:27017,cluster0-shard-00-02.hk6ff.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-doafy9-shard-0&authSource=admin&retryWrites=true&w=majority" || 'mongodb://localhost:27017/yelp-camp';
 
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
@@ -159,7 +159,7 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', { err })
 })
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Serving on port ${port}`)
 })
