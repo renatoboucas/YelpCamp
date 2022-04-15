@@ -164,16 +164,3 @@ app.listen(port, () => {
     console.log(`Serving on port ${port}`)
 })
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-    console.log(`Serving on port ${port}`)
-})
-=======
-app.listen(3000, () => {
-    console.log('Serving on port 3000');
-});
->>>>>>> delete-reviews
-=======
->>>>>>> home-login-register-styling
